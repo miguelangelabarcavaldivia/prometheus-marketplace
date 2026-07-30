@@ -96,3 +96,14 @@ coverage/
 .coverage
 coverage.xml
 *.lcov
+
+node_modules/
+dist/
+out/
+.env
+.DS_Store
+Thumbs.db
+__pycache__/
+*.log
+.vscode/
+.idea/
