@@ -1,0 +1,26 @@
+product: starter-kit:
+- productos/PRODUCTO_01_NextJS_AI_Starter_Kit/**/*
+
+product: prompts:
+- productos/PRODUCTO_02_Prompt_Engineering_Playbook/**/*
+
+product: rag:
+- productos/PRODUCTO_03_RAG_System_Template/**/*
+
+product: curso-prompts:
+- productos/PRODUCTO_04_Prompt_Engineering_Curso/**/*
+
+product: agents:
+- productos/PRODUCTO_05_AI_Agent_Pipeline/**/*
+
+product: guia-agents:
+- productos/PRODUCTO_06_De_Cero_a_AI_Agent/**/*
+
+product: cli:
+- productos/PRODUCTO_07_CLI_AI_Commit_Tool/**/*
+
+marketing:
+- marketing/**/*
+
+publication:
+- publicaciones/**/*

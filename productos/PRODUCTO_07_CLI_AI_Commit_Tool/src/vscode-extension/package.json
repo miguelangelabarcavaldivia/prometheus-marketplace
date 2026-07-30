@@ -1,0 +1,88 @@
+{
+  "name": "aicommit-vscode",
+  "displayName": "AI Commit",
+  "description": "AI-powered commit messages, code review, suggestions, and changelogs",
+  "version": "1.0.0",
+  "publisher": "miguelabarcavaldivia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguelabarca/aicommit"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "aicommit.generateCommit",
+        "title": "AI Commit: Generate Commit Message"
+      },
+      {
+        "command": "aicommit.reviewCode",
+        "title": "AI Commit: Review Latest Commit"
+      },
+      {
+        "command": "aicommit.suggestChanges",
+        "title": "AI Commit: Suggest Improvements"
+      },
+      {
+        "command": "aicommit.generateChangelog",
+        "title": "AI Commit: Generate Changelog"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "aicommit.generateCommit",
+          "group": "2_ai_commit"
+        },
+        {
+          "command": "aicommit.suggestChanges",
+          "group": "2_ai_commit"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "aicommit.reviewCode",
+          "group": "2_ai_commit"
+        }
+      ],
+      "scm/title": [
+        {
+          "command": "aicommit.generateCommit",
+          "group": "2_ai_commit"
+        },
+        {
+          "command": "aicommit.generateChangelog",
+          "group": "2_ai_commit"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-electron": "^2.3.9",
+    "typescript": "^5.6.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "@google/generative-ai": "^0.21.0",
+    "commander": "^12.1.0",
+    "openai": "^4.73.0"
+  }
+}
