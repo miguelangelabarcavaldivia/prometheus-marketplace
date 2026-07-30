@@ -1,0 +1,166 @@
+{
+  "store": {
+    "name": "Prometheus IA Dev Marketplace",
+    "url": "https://gumroad.com/miguelabarca",
+    "currency": "USD",
+    "discount_code": "LAUNCH40",
+    "discount_percent": 40
+  },
+  "products": [
+    {
+      "id": "3GwDAXU1HguMAQfh5YbyeQ==",
+      "name": "Next.js AI Starter Kit",
+      "slug": "nextjs-ai-starter",
+      "price": 4900,
+      "price_formatted": "$49",
+      "category": "starter-kit",
+      "tags": ["nextjs", "react", "openai", "stripe", "auth"],
+      "description": "Full-stack boilerplate con OpenAI, Auth, y Stripe",
+      "features": [
+        "Chat con OpenAI GPT-4 (streaming)",
+        "Autenticación con Auth.js",
+        "Pagos con Stripe",
+        "Componentes UI listos",
+        "Deploy en Vercel"
+      ],
+      "files": ["nextjs-ai-starter-kit.zip"],
+      "published": true
+    },
+    {
+      "id": "SiyN5sias1QfPpVxdpzn6w==",
+      "name": "Prompt Engineering Playbook",
+      "slug": "prompt-playbook",
+      "price": 1900,
+      "price_formatted": "$19",
+      "category": "prompts",
+      "tags": ["prompts", "playbook", "cheatsheet"],
+      "description": "200+ prompts listos para usar",
+      "features": [
+        "30+ prompts para desarrollo",
+        "25+ prompts para marketing",
+        "20+ prompts para análisis",
+        "35+ prompts para creatividad",
+        "40+ prompts para productividad"
+      ],
+      "files": ["prompt-playbook.pdf"],
+      "published": true
+    },
+    {
+      "id": "_D_0wwNrBOVIJtSkTb3Rcw==",
+      "name": "RAG System Template",
+      "slug": "rag-system",
+      "price": 3900,
+      "price_formatted": "$39",
+      "category": "rag",
+      "tags": ["rag", "langchain", "pinecone", "weaviate"],
+      "description": "QA sobre documentos con LangChain",
+      "features": [
+        "Upload de PDFs, Word, Markdown",
+        "Múltiples estrategias de chunking",
+        "Vector DB (Pinecone, Weaviate, Chroma)",
+        "Interfaz de chat conversacional",
+        "Métricas de precisión"
+      ],
+      "files": ["rag-system-template.zip"],
+      "published": true
+    },
+    {
+      "id": "lU_-_PPe82uRJhdY4Ix7sg==",
+      "name": "Curso de Prompt Engineering Avanzado",
+      "slug": "curso-prompts",
+      "price": 2900,
+      "price_formatted": "$29",
+      "category": "course",
+      "tags": ["course", "prompts", "tutorial"],
+      "description": "8 módulos, 120+ páginas",
+      "features": [
+        "8 módulos completos",
+        "120+ páginas de contenido",
+        "Ejercicios prácticos",
+        "Cheatsheets incluidas",
+        "Proyectos reales"
+      ],
+      "files": ["curso-prompt-engineering.pdf"],
+      "published": true
+    },
+    {
+      "id": "JGw7jLEQllo50Nga_YeWuA==",
+      "name": "AI Agent Pipeline",
+      "slug": "agent-pipeline",
+      "price": 5900,
+      "price_formatted": "$59",
+      "category": "agents",
+      "tags": ["agents", "langgraph", "automation"],
+      "description": "3 agentes listos para producción",
+      "features": [
+        "Customer Support Agent",
+        "Research Agent",
+        "Code Review Agent",
+        "LangGraph orchestration",
+        "Docker deployment"
+      ],
+      "files": ["agent-pipeline.zip"],
+      "published": true
+    },
+    {
+      "id": "j5GzAveDP0dpGhb6gV0rgg==",
+      "name": "De Cero a AI Agent",
+      "slug": "guia-agents",
+      "price": 2400,
+      "price_formatted": "$24",
+      "category": "guide",
+      "tags": ["guide", "agents", "tutorial"],
+      "description": "Guía práctica paso a paso",
+      "features": [
+        "80+ páginas",
+        "3 proyectos completos",
+        "Código listo para usar",
+        "Arquitectura clara",
+        "Ejemplos prácticos"
+      ],
+      "files": ["guia-ai-agents.pdf"],
+      "published": true
+    },
+    {
+      "id": "N-x0W15BcgXDdpvxneGk_w==",
+      "name": "CLI AI Commit Tool",
+      "slug": "cli-commit-tool",
+      "price": 1400,
+      "price_formatted": "$14",
+      "category": "cli",
+      "tags": ["cli", "git", "commits", "code-review"],
+      "description": "Commits automáticos con IA",
+      "features": [
+        "Conventional Commits",
+        "Code review automático",
+        "Generación de changelogs",
+        "Múltiples proveedores (OpenAI, Anthropic, Groq, Google)",
+        "VS Code extension"
+      ],
+      "files": ["cli-commit-tool.zip"],
+      "published": true
+    }
+  ],
+  "bundles": [
+    {
+      "id": "54PJtZINrqSaNMdzGZyEJw==",
+      "name": "Full Stack AI Bundle",
+      "slug": "full-stack-ai-bundle",
+      "price": 11900,
+      "price_formatted": "$119",
+      "products": ["3GwDAXU1HguMAQfh5YbyeQ==", "_D_0wwNrBOVIJtSkTb3Rcw==", "JGw7jLEQllo50Nga_YeWuA=="],
+      "discount": 19,
+      "published": false
+    },
+    {
+      "id": "lsYLvrwa-Hv8s1J5NhNu3w==",
+      "name": "AI Agent Mastery Bundle",
+      "slug": "agent-mastery-bundle",
+      "price": 8900,
+      "price_formatted": "$89",
+      "products": ["JGw7jLEQllo50Nga_YeWuA==", "j5GzAveDP0dpGhb6gV0rgg==", "lU_-_PPe82uRJhdY4Ix7sg=="],
+      "discount": 14,
+      "published": false
+    }
+  ]
+}
