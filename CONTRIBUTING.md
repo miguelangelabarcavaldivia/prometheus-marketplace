@@ -1,76 +1,77 @@
-# Contributing to Prometheus 3.0
+# Contributing to Prometheus IA Dev Marketplace
 
-Thank you for your interest in contributing! We welcome contributions from the community.
+¡Gracias por tu interés en contribuir! Este documento te guía por el proceso.
 
----
+## Cómo contribuir
 
-## Code of Conduct
+1. **Fork** el repositorio
+2. **Crea una branch** para tu feature: `git checkout -b feat/nueva-funcionalidad`
+3. **Commit** tus cambios: `git commit -m "feat: descripción"`
+4. **Push** a tu branch: `git push origin feat/nueva-funcionalidad`
+5. **Abre un Pull Request**
 
-This project adheres to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct. By participating, you are expected to uphold this code. Please report unacceptable behavior to the project maintainers.
+## Estilos de commit
 
----
+Usamos [Conventional Commits](https://www.conventionalcommits.org/):
 
-## How to Contribute
-
-### 1. Reporting Bugs
-
-- Open a [GitHub Issue](https://github.com/your-org/Prometheus_IA_Dev_Marketplace/issues) with a clear title and description.
-- Include steps to reproduce, expected vs. actual behavior, and environment details (OS, browser, versions).
-- Add relevant labels (e.g., `bug`, `frontend`, `backend`).
-
-### 2. Suggesting Features
-
-- Open a Feature Request issue with the label `enhancement`.
-- Describe the problem and the proposed solution clearly.
-- Explain why this would benefit the project.
-
-### 3. Submitting Pull Requests
-
-1. **Fork** the repository and create your branch from `main`.
-2. **Branch naming**: `feature/your-feature-name`, `fix/your-fix-name`, `chore/your-chore-name`.
-3. **Commit messages**: Use conventional commits (`feat:`, `fix:`, `chore:`, `docs:`, `refactor:`).
-4. **Run checks**: Ensure linting, type-checking, and tests pass before submitting.
-5. **Open a PR** against `main` with a clear title and description. Reference any related issues.
-
-#### PR Checklist
-
-- [ ] Code follows the project's style and conventions.
-- [ ] Linting passes (`npm run lint` / `pnpm lint`).
-- [ ] Type-checking passes (`npm run typecheck` / `pnpm typecheck`).
-- [ ] Tests pass and new tests are added for new functionality.
-- [ ] Documentation is updated if public APIs or behavior changed.
-- [ ] No new warnings or errors are introduced.
-
----
-
-## Development Setup
-
-```bash
-# Clone your fork
-git clone https://github.com/your-username/Prometheus_IA_Dev_Marketplace.git
-cd Prometheus_IA_Dev_Marketplace
-
-# Install dependencies
-npm install   # or pnpm install
-
-# Start a specific product (e.g., AgentForge)
-cd apps/agent-forge
-npm run dev
+```
+feat: Add AI Code Review Tool
+fix: Resolve memory leak in agent pipeline
+docs: Update installation guide
+refactor: Simplify auth flow
 ```
 
-Refer to each product's `README.md` for product-specific instructions.
+## Estructura del proyecto
 
----
+```
+productos/
+  PRODUCTO_01_NextJS_AI_Starter_Kit/
+  PRODUCTO_02_Prompt_Engineering_Playbook/
+  PRODUCTO_03_RAG_System_Template/
+  PRODUCTO_04_Curso_Prompt_Engineering_Avanzado/
+  PRODUCTO_05_AI_Agent_Pipeline/
+  PRODUCTO_06_De_Cero_a_AI_Agent/
+  PRODUCTO_07_CLI_AI_Commit_Tool/
+    src/
+      vscode-extension/
+      .github/
+marketing/
+  posts/
+  email-templates/
+  video-scripts/
+docs/
+scripts/
+.github/
+  workflows/
+  ISSUE_TEMPLATE/
+```
 
-## Code Style
+## Productos nuevos
 
-- **JavaScript/TypeScript**: Prettier + ESLint (config at root level).
-- **Python**: Ruff + Black (config in `pyproject.toml` where applicable).
-- **Go**: `gofmt` standard formatting.
-- **Commits**: Conventional Commits (`feat`, `fix`, `chore`, `docs`, `refactor`, `test`, `ci`).
+Para agregar un nuevo producto:
 
----
+1. Crea el directorio en `productos/PRODUCTO_XX_nombre/`
+2. Incluye: `src/`, `README.md`, `LICENSE`
+3. Agrega el producto a `docs/product-catalog.json`
+4. Agrega el producto al README principal
+5. Crea un script de marketing (`marketing/posts/post-XX-nombre.md`)
 
-## Questions?
+## Testing
 
-Open a [Discussion](https://github.com/your-org/Prometheus_IA_Dev_Marketplace/discussions) or reach out to the maintainers. We're happy to help you get started.
+```bash
+# Para el CLI tool
+cd productos/PRODUCTO_07_CLI_AI_Commit_Tool
+npm test
+
+# Para el VS Code extension
+cd src/vscode-extension
+npm test
+```
+
+## Reportar bugs
+
+Usa el template de [bug report](.github/ISSUE_TEMPLATE/bug_report.md).
+
+## Preguntas
+
+Únete a nuestra comunidad en [Discord](https://discord.gg/prometheus-ia) o abre un [issue](https://github.com/miguelabarca/Prometheus_IA_Dev_Marketplace/issues).
