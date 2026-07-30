@@ -1,0 +1,47 @@
+# AI Agent Pipeline — Configuration
+# Override any value via environment variable with PIPELINE_ prefix.
+
+default_provider: openai
+
+providers:
+  openai:
+    api_key: "${OPENAI_API_KEY}"
+    model: gpt-4o
+    temperature: 0.7
+    max_tokens: 4096
+
+  anthropic:
+    api_key: "${ANTHROPIC_API_KEY}"
+    model: claude-sonnet-4-20250514
+    temperature: 0.7
+    max_tokens: 4096
+
+  gemini:
+    api_key: "${GEMINI_API_KEY}"
+    model: gemini-2.5-flash-001
+    temperature: 0.7
+    max_tokens: 4096
+
+  ollama:
+    api_key: "ollama"
+    model: llama3.3
+    base_url: http://localhost:11434/v1
+    temperature: 0.7
+    max_tokens: 4096
+
+memory:
+  backend: inmemory           # inmemory | redis
+  ttl_seconds: 3600
+  redis_url: redis://localhost:6379/0
+
+logging:
+  level: INFO
+  format: "%(asctime)s  %(levelname)-8s  %(name)s  %(message)s"
+  output: console
+
+agent:
+  max_retries: 3
+  timeout_seconds: 120
+  human_in_the_loop: true
+
+plugins: []

@@ -1,0 +1,22 @@
+nextjs-ai-starter/
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── chat/          # Streaming AI chat endpoint
+│   │   │   ├── auth/          # Auth.js routes
+│   │   │   └── webhook/       # Stripe webhooks
+│   │   ├── (marketing)/       # Landing pages
+│   │   └── dashboard/         # Protected dashboard
+│   ├── components/
+│   │   ├── ui/                # shadcn/ui components
+│   │   └── ai/                # AI chat components
+│   ├── lib/
+│   │   ├── ai/                # OpenAI client config
+│   │   ├── auth/              # Auth.js config
+│   │   ├── db/                # Prisma client
+│   │   └── stripe/            # Stripe helpers
+│   └── styles/
+├── prompts/                   # 10 AI dev prompts
+├── prisma/                    # Schema + migrations
+├── bonus/                     # Docker + Postman
+└── docs/                      # Documentation

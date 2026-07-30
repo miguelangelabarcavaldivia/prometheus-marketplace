@@ -1,0 +1,47 @@
+{
+  "name": "@miguelabarcavaldivia/aicommit",
+  "version": "1.0.1",
+  "description": "AI-powered commit message generator and code review tool",
+  "type": "module",
+  "bin": {
+    "aicommit": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "commit",
+    "git",
+    "conventional-commits",
+    "cli",
+    "code-review"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelabarca/aicommit.git"
+  },
+  "homepage": "https://github.com/miguelabarca/aicommit#readme",
+  "bugs": {
+    "url": "https://github.com/miguelabarca/aicommit/issues"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "@google/generative-ai": "^0.21.0",
+    "commander": "^12.1.0",
+    "openai": "^4.73.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

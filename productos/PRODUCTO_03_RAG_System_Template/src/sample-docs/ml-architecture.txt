@@ -1,0 +1,55 @@
+Machine Learning System Architecture Guide
+===========================================
+
+1. INTRODUCTION
+---------------
+
+This document describes the reference architecture for deploying machine
+learning systems in production. The architecture follows a microservices
+pattern with clear separation between training, serving, and monitoring.
+
+2. SYSTEM COMPONENTS
+--------------------
+
+2.1 Data Pipeline
+
+Raw data enters through an ingestion layer that validates schema and
+data quality. Validated data is stored in a feature store (e.g., Feast)
+for online and offline access. Feature pipelines transform raw data into
+feature vectors using batch processing (Apache Spark) or stream processing
+(Apache Flink).
+
+2.2 Model Training
+
+Training orchestrators (Kubeflow, Airflow) coordinate multi-step pipelines
+that include data validation, feature engineering, model training,
+hyperparameter tuning, and model evaluation. Trained models are registered
+in a model registry (MLflow) with full lineage tracking.
+
+2.3 Model Serving
+
+Production models are deployed as REST endpoints or gRPC services behind
+a load balancer. For latency-sensitive applications, models are compiled
+to ONNX or TensorRT and served on GPU instances with auto-scaling.
+
+2.4 Monitoring
+
+Model performance is monitored for data drift, concept drift, and accuracy
+degradation. Alerts are triggered when metrics fall below thresholds.
+Prediction logs are stored for audit and retraining decisions.
+
+3. RETRAINING STRATEGY
+----------------------
+
+Models are automatically retrained when drift detection scores exceed
+thresholds or on a scheduled weekly cadence. Shadow deployments compare
+candidate models against the current production model before promotion.
+
+4. INFRASTRUCTURE REQUIREMENTS
+------------------------------
+
+- Kubernetes cluster (EKS, GKE, or AKS) for orchestration
+- Object storage (S3, GCS) for artifacts and datasets
+- GPU nodes for training and low-latency inference
+- Monitoring stack (Prometheus + Grafana)
+- Centralized logging (ELK or Loki)

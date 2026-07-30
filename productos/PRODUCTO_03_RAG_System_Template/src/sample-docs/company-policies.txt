@@ -1,0 +1,48 @@
+COMPANY POLICIES HANDBOOK
+=========================
+
+Version 2.4 | Effective January 2026
+
+----------------------------------------
+1. Code of Conduct
+----------------------------------------
+
+All employees are expected to maintain a professional and respectful workplace.
+Harassment, discrimination, and retaliation of any kind are strictly prohibited.
+Employees should report any violations to their manager or HR immediately.
+
+----------------------------------------
+2. Remote Work Policy
+----------------------------------------
+
+Eligible employees may work remotely up to 4 days per week. Core hours are
+10:00 AM to 3:00 PM Eastern Time, during which all remote employees must be
+available on company communication tools. Home office setup costs up to $500
+may be reimbursed with manager approval.
+
+----------------------------------------
+3. Data Security
+----------------------------------------
+
+All company data must be handled in accordance with our security standards:
+- Passwords must be changed every 90 days and use multi-factor authentication
+- Company-issued laptops must use full-disk encryption
+- Customer data must never be stored on personal devices
+- Security incidents must be reported within 1 hour to the IT team
+- VPN must be used when accessing company resources from public networks
+
+----------------------------------------
+4. Leave Policy
+----------------------------------------
+
+Full-time employees accrue 15 days of paid time off (PTO) per year, plus
+11 public holidays. Sick leave is separate and provides 10 days per year.
+Parental leave offers 12 weeks at full pay for all new parents.
+
+----------------------------------------
+5. Expense Reimbursement
+----------------------------------------
+
+Business expenses must be pre-approved by your manager. Receipts are required
+for any expense over $25. Travel expenses follow per diem rates published on
+the intranet. Expense reports must be submitted within 30 days.

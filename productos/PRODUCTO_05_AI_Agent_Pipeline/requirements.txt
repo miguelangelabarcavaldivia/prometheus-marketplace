@@ -1,0 +1,23 @@
+# AI Agent Pipeline — Python dependencies
+# Python 3.11+
+
+# ── Core ───────────────────────────────────────────────────────────────────
+openai>=1.55.0
+httpx>=0.28.0
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+pyyaml>=6.0.2
+
+# ── API Server ─────────────────────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# ── Code Review ────────────────────────────────────────────────────────────
+# ruff>=0.7.0        # optional — uncomment if using local linting
+# pylint>=3.3.0      # optional
+# flake8>=7.1.0      # optional
+
+# ── Development ────────────────────────────────────────────────────────────
+# pytest>=8.3.0
+# pytest-asyncio>=0.24.0
+# httpx>=0.28.0       # for testing the API
